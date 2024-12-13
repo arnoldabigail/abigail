@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+    <navbar-component></navbar-component>
+    
+    <!-- MAIN CONTENT: Put the picture here -->
+    <div class="main">
+        <main>
+            <h1>About</h1>
+            <!-- Custom Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-images">
+                    <!-- Add as many images as needed here -->
+                    <img src="images/filler12.jpg" alt="First slide">
+                    <img src="images/filler14.webp" alt="Second slide">
+                    <img src="images/filler16.jpg" alt="Third slide">
+                    <img src="images/filler17.jpg" alt="Fourth slide">
+                    <img src="images/filler18.jpg" alt="Fifth slide">
+                    <img src="images/filler19.jpg" alt="Sixth slide">
+                </div>
+                <!-- Removed the carousel-dots section -->
+                <!-- Left and Right Arrows -->
+                <button class="carousel-arrow left">&#10094;</button>
+                <button class="carousel-arrow right">&#10095;</button>
+            </div>
+
+            <div class="description">
+                <p><h2>Kamera,</h2> Where simplicity meets innovation in the world of photography. At Kamera, we
+                    believe in offering high-quality, easy-to-use digital cameras that empower both amateur and seasoned
+                    photographers to capture life’s most precious moments. Our cameras are designed with a minimalistic
+                    yet seamless design, offering the perfect balance of functionality and style.
+<br> <br>
+                    Whether you’re taking snapshots for fun or creating artistic visual stories, Kamera provides a range
+                    of features that make your photography experience effortless. From compact cameras with advanced
+                    shooting modes to cameras with sleek designs and user-friendly interfaces, we cater to every
+                    photographer's needs. With Kamera, every picture tells a unique story.
+<br> <br>
+                    Explore our collection and discover the perfect camera for your adventures today.</p>
+            </div>
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <footer-component></footer-component>
+    <script src="footer.js"></script>
+    <!--added script-->
+    <!-- JavaScript for the carousel functionality -->
+    <script>
+        const images = document.querySelector('.carousel-images');
+        const leftArrow = document.querySelector('.carousel-arrow.left');
+        const rightArrow = document.querySelector('.carousel-arrow.right');
+        let index = 0;
+        const imageCount = document.querySelectorAll('.carousel-images img').length;
+
+        // Function to change the image based on the current index
+        function changeSlide() {
+            // Move the images container to the left based on the index
+            images.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Function to go to the next slide
+        function nextSlide() {
+            index = (index + 1) % imageCount;
+            changeSlide();
+        }
+
+        // Function to go to the previous slide
+        function prevSlide() {
+            index = (index - 1 + imageCount) % imageCount;
+            changeSlide();
+        }
+
+        // Auto slide every 3 seconds
+        setInterval(nextSlide, 3000);
+
+        // Add event listeners to the arrows to go to the previous/next slide
+        leftArrow.addEventListener('click', prevSlide);
+        rightArrow.addEventListener('click', nextSlide);
+    </script>
+</body>
+
+</html>

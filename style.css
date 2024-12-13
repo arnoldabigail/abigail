@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #3c352e; /* this so yall can see ur mistakes */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: Noto Serif, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: #3c352e; /* change this color area */
+    padding: 0px;
+    margin-bottom: -10px;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    background-color: #3c352e;
+    padding: 2em;
+    flex-direction: column;
+    position: relative;
+    width: 100%; /* Ensure it doesn't cause overflow */
+    box-sizing: border-box; /* Include padding in the element’s total width */
+}
+
+.main h1 {
+    position: relative; /* Ensure the h1 element is a reference for the absolute positioning */
+    margin-top: 0; /* Remove top margin if needed */
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+}
+
+/* Styling for the lines above the h1 in .main */
+.main h1::before,
+.main h1::after {
+    content: "";
+    position: absolute;
+    top: 30px; /* Moves the lines above the h1 (adjust as needed) */
+    width: 600px; /* Length of the lines */
+    height: 2px; /* Thickness of the lines */
+    background-color: white; /* White color for the lines */
+}
+
+.main h1::before {
+    left: 0; /* Align the left line to the left of the h1 */
+}
+
+.main h1::after {
+    right: 0; /* Align the right line to the right of the h1 */
+}
+
+.main h2 {
+    margin: 0;
+    font-size: 2.3em;
+    text-align: center; /* Centers the text */
+    padding: 0 1em;
+    flex: 1; /* Ensures it takes up available space */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+/* MAIN COMPONENTS */
+
+/* Styling for the carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Styling for the images inside the carousel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Style for the navigation dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+
+/* Styling for the left and right arrows */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent; /* Transparent background */
+    z-index: 10; /* Ensure arrows are on top of the images */
+}
+
+.carousel-arrow.left {
+    left: 10px;
+}
+
+.carousel-arrow.right {
+    right: 10px;
+}
+
+.description {
+    padding: 0em 15em;
+    text-align: justify;
+    font-size: 19.5px;
+    letter-spacing: 1px;
+    align-items: center;
+}
+
+/* END OF MAIN COMPONENTS */
+
+/* CSS for Kamera Footer */
+.footer {
+    background-color: #211d1a;
+    color: #f1f1f1;
+    padding: 20px 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #bfbfbf;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #088178;
+}
+
+.footer-section .social a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer-section .social img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section .social img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888888;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center; /* all the 1-headers should be centered imo adjust other headers if needed */
+    padding: 0 1em;
+}
+
+/* INDEX BACKGROUND CLIP */
+.background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute; /* Allows positioning relative to the viewport */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the element's size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* NAVIGATION BAR */
+.nav {
+    all: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-image: url('navbar_camera_tape.png');
+    background-size: contain;
+    background-position: fixed;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Noto Serif, Arial, Helvetica, sans-serif;
+}
+
+.nav li,a{
+    text-decoration: none;
+    color: white; /* change this */
+}
+
+.logo {
+    cursor: pointer;
+    object-fit: contain;
+    max-height: 3em;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1; /* Makes nav links occupy available space */
+    justify-content: center; /* Centers nav links in the available space */
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0em 1.25em;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgb(179, 179, 179); /* change this */
+}
+
+.cart {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Ensures 'Cart' doesn't wrap or shrink */
+}
+
+.cart:hover {
+    color: rgb(179, 179, 179);
+}
+
+#carticon {
+    height: 1em; /* Matches the height of the text */
+    width: auto; /* Scales width proportionally */
+    vertical-align: middle; /* Aligns image with the text */
+    padding: 0em 0.3em 0.3em 0;
+}
+
+#carticon:hover {
+    opacity: 0.5;
+}
+
+/* END NAVIGATION BAR */
