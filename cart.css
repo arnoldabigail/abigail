@@ -290,3 +290,79 @@ body {
 }
 
 /* END NAVIGATION BAR */
+
+/* CSS for Kamera Footer */
+.footer {
+  background-color: #211d1a;
+  color: #f1f1f1;
+  padding: 20px 0;
+  font-family: 'Noto Serif', serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #bfbfbf;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bfbfbf;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #088178;
+}
+
+.footer-section .social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-section .social img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-section .social img:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888888;
+}

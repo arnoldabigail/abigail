@@ -32,9 +32,9 @@ class FooterComponent extends HTMLElement {
         <!-- Social Media Section -->
         <div class="footer-section social">
             <h3>Follow Us</h3>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://x.com"><img src="twitter-icon.png" alt="Twitter"></a>
         </div>
     </div>
 
