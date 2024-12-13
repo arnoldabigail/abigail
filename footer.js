@@ -15,26 +15,26 @@ class FooterComponent extends HTMLElement {
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="products.html">Shop</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </div>
 
         <!-- Contact Section -->
         <div class="footer-section contact">
             <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:support@kamera.com">support@kamera.com</a></p>
+            <p>Email: <a href="mailto:kamera@auf.edu.ph">kamera@auf.edu.ph</a></p>
             <p>Phone: +123-456-7890</p>
-            <p>Location: 123 Vintage Lane, Retro City</p>
+            <p>Location: 295 Mcarthur Lane, Angeles City</p>
         </div>
 
         <!-- Social Media Section -->
         <div class="footer-section social">
             <h3>Follow Us</h3>
-            <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
         </div>
     </div>
 
