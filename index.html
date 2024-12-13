@@ -6,6 +6,11 @@
     <title>Kamera</title>
     <link rel="stylesheet" href="style.css">
     <script src="navbar.js"></script>
+    <style>
+        body {
+            height: 125vh;
+        }
+    </style>
 </head>
 <body>
     <!--NAVIGAITION-->
@@ -15,12 +20,13 @@
         <navbar-component></navbar-component>
         <video src="index-video.mp4" autoplay loop muted playsinline class="background-clip"></video>
         <div class="content">
-            <img src="logo.png" alt="Kamera" style="height: 15em; width: auto">
+            <img src="logo.png" alt="Kamera" style="height: 20em; width: auto">
         </div>
-    </div>
+            <div class="hidden"></div>
+        </div>
     
     <!-- FOOTER -->
-    <footer-component><!--change by going to footer.js file--></footer-component>
+    <footer-component></footer-component>
     <!--added script-->
     <script src="footer.js"></script>
 </body>
