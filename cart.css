@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   font-family: Noto Serif, Arial, Helvetica, sans-serif;
   font-weight: 300;
+  background-color: #f0e9df;
 }
 
 /*Content*/
@@ -145,6 +146,7 @@ body {
 #cart table td:nth-child(5) input {
   width: 70px;
   padding: 10px 5px 10px 15px;
+  background-color: #f0e9df;
 }
 
 #cart table th td {
@@ -184,6 +186,7 @@ body {
   width: 60%;
   margin-right: 10px;
   border: 1px solid black;
+  background-color: #f0e9df;
 }
 
 #coupon button,
